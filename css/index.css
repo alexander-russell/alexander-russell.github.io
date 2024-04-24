@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    border: 1px solid magenta;
+    /* border: 1px solid magenta; */
     box-sizing: border-box;
     margin: 0px;
 }
@@ -12,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     max-width: 800px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .column-1,
@@ -22,20 +22,20 @@ body {
 
 .column-1 {
     padding: 5px;
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
 }
 
 nav {
     display: flex;
     justify-content: right;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 nav>ul {
     display: flex;
     flex-direction: row;
     margin: 0px;
-    border: 1px solid chartreuse;
+    /* border: 1px solid chartreuse; */
 }
 
 nav>ul>li {
@@ -52,7 +52,7 @@ nav>ul>li>a {
 
 header {
     text-align: right;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 header>h1 {
@@ -71,7 +71,7 @@ header>h1 {
 .column-2 {
     display: flex;
     /* width: 100%; */
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
 }
 
 .profile {
