@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Matric Multiplication</title>
+    <!-- <link rel="stylesheet" href="css/master.css"> -->
+    <!-- <link rel="stylesheet" href="css/forms.css"> -->
+    <link rel="stylesheet" href="css/matrices.css">
+    <!-- <script src="scripts/template.js" defer></script> -->
+    <!-- <script src="scripts/master.js" defer></script> -->
+    <script src="scripts/matrices.js" defer></script>
+</head>
+
+<body>
+    <div class="page">
+        <!-- <section class="settings">
+            <div class="form dimensions-chooser">
+                <div class="xdim">
+                    <div>X</div>
+                    <div class="xforms">
+                        <div class="form-row">
+                            <label for="xrows">Rows:</label>
+                            <input type="number" name="xrows" id="xrows" placeholder="2" value="2" />
+                        </div>
+                        <div class="form-row">
+                            <label for="xcols">Cols:</label>
+                            <input type="number" name="xcols" id="xcols" placeholder="3" value="3" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="yrows">Y Rows:</label>
+                    <input type="number" name="yrows" id="yrows" placeholder="3" value="3" />
+                </div>
+                <div class="form-row">
+                    <label for="ycols">Y Rows:</label>
+                    <input type="number" name="ycols" id="ycols" placeholder="2" value="2" />
+                </div>
+                <div class="form-row">
+                    <label for="go-button">Click to generate tables </label>
+                    <button id="go-button">tabulate!</button>
+                </div>
+            </div>
+        </section> -->
+        <section class="settings">
+            <div class="form dimensions-chooser">
+                <div class="form-row">
+                    <label for="xrows">X Rows:</label>
+                    <input type="number" name="xrows" id="xrows" placeholder="2" value="2" />
+                </div>
+                <div class="form-row">
+                    <label for="xcols">X Cols:</label>
+                    <input type="number" name="xcols" id="xcols" placeholder="3" value="3" />
+                </div>
+                <div class="form-row">
+                    <label for="yrows">Y Rows:</label>
+                    <input type="number" name="yrows" id="yrows" placeholder="3" value="3" />
+                </div>
+                <div class="form-row">
+                    <label for="ycols">Y Cols:</label>
+                    <input type="number" name="ycols" id="ycols" placeholder="2" value="2" />
+                </div>
+                <div class="form-row">
+                    <label for="go-button">Click to generate tables: </label>
+                    <button id="go-button">tabulate!</button>
+                </div>
+            </div>
+        </section>
+        <section class="display">
+            <div class="tables"></div>
+        </section>
+        <section class="math-display">
+            <div class="formula">
+                <math display="block">
+                    <mrow>
+                        <msub>
+                            <mi>c</mi>
+                            <mn>ij</mn>
+                        </msub>
+                        =
+                    </mrow>
+                    <mrow>
+                        <munderover>
+                            <mo>&sum;</mo>
+                            <mrow>
+                                <mi>k</mi>
+                                <mo>=</mo>
+                                <mn>1</mn>
+                            </mrow>
+                            <mrow>
+                                <mo>n</mo>
+                            </mrow>
+                        </munderover>
+                        <msub>
+                            <mi>a</mi>
+                            <mn>ik</mn>
+                        </msub>
+                        <msub>
+                            <mi>b</mi>
+                            <mn>kj</mn>
+                        </msub>
+                    </mrow>
+                </math>
+            </div>
+            <div class="click-formula">
+                
+            </div>
+            <!-- <div class="click-formula"><math display="block"><mrow>6 * 8 + 2 * 0 + 3 * 1 = 51</mrow></math></div> -->
+        </section>
+    </div>
+</body>
+
+</html>
