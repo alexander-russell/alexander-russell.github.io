@@ -1,0 +1,211 @@
+html {
+  background-color: #D1FFDA;
+}
+
+.settings,
+.math-display {
+  background-color: #FFF3C3;
+  margin: 20px;
+  padding: 10px;
+}
+
+/* .form-row > input {
+  background-color: transparent;
+  border: 0;
+  min-width: 0px;
+} */
+
+.xdim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.xdim > * {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+}
+
+
+.xdim > .xforms {
+  display: flex;
+  flex-direction: row;
+}
+
+.xdim .form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .xdim > label {
+
+} */
+
+.xdim input {
+  background-color: transparent;
+  border: 0;
+  min-width: 0px;
+  width: 40px;
+}
+
+.tables {
+  display: flex;
+  max-width: 100%;
+  margin: 20px;
+  padding: 10px;
+}
+
+.symbol {
+  display: flex;
+  /* background-color: #00FF00; */
+  font-size: 64pt;
+}
+
+.symbol > div {
+  display: flex;
+  align-self: center;
+  margin: 10px;
+}
+
+.tab {
+  /* background-color: #FF0000; */
+  display: flex;
+  min-height: 400px;
+  width: 50%;
+  padding: 20px ;
+  flex-direction: column; /* added */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 20px;
+}
+
+/* .tab {
+  position: relative;
+}
+.tab:before, .tab:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border: 1px solid #000;
+  width: 60px;
+  height: 100%;
+}
+.tab:before {
+  left: -6px;
+  border-right: 0;
+}
+.tab:after {
+  right: -6px;
+  border-left: 0;
+} */
+
+.row {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex: 1; /* added */
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: orange; */
+  /* border: 1px solid red; */
+  flex: 1; /* added */
+}
+
+.cellForm::-webkit-outer-spin-button,
+.cellForm::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number].cellForm {
+    -moz-appearance: textfield;
+}
+
+.cellForm,
+.cellText {
+  font-size: 64pt;
+  font-family: inherit;
+
+}
+
+.cellForm {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center; 
+  background-color: transparent;
+  border: transparent;
+}
+
+.cellForm:focus {
+  outline: 0;
+  /* border: 1px solid purple; */
+  color: green;
+}
+
+
+/* input.cellForm:focus {
+  outline-width: 0;
+} */
+
+.highlighted {
+  /* border: 2px solid purple; */
+  background-color: pink;
+}
+
+math {
+  display: block;
+}
+
+.formula,
+.click-formula {
+  font-size: 20pt;
+  text-align: center;
+}
+
+
+.tab,
+.row {
+    /* display: flex; */
+    /* width: 100%; */
+    /* height:100%; */
+}
+.row {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* border: 1px solid red; */
+
+}
+/* 
+.tab {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    min-width: calc(100% * 1/6);
+    height: 100px;
+} */
+/* 
+.cell {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    min-width: calc(100% * 1/6);
+    height: 100px;
+    border: 1px solid greenyellow
+} */
+
+/* body, html {
+    margin: 0;
+    height: 100%;
+}
+   */
