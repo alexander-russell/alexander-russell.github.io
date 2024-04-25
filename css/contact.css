@@ -1,0 +1,87 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* border: 1px solid magenta; */
+    margin: 0px;
+    padding: 5%;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 800px;
+    /* border: 1px solid green; */
+}
+
+header,
+section {
+    padding: 1%;
+}
+
+header {
+    display: flex;
+    align-self: stretch;
+    /* min-height: 100%; */
+    /* border: 1px solid blue; */
+}
+
+header>h1 {
+    margin: 0px;
+    /* border: 1px solid gold; */
+    font-size: 3em;
+}
+
+section {
+    /* border: 1px solid brown; */
+    border-left: 1px solid black;
+    font-size: 2em;
+}
+
+section>p:first-child {
+    margin-top: 0px;
+}
+
+section>p:last-child {
+    margin-bottom: 0px;
+}
+
+.home-button-wrapper {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.home-button {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.home-button>a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.home-button>a:hover {
+    color: darkgreen;
+}
+
+@media (max-aspect-ratio: 2/3) {
+    .page {
+        flex-direction: column;
+        /* max-width: 90%; */
+    }
+
+    section {
+        border-left: none;
+        border-top: 1px solid black;
+        font-size: 1.2em;
+    }
+
+}
