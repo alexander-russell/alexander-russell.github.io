@@ -51,8 +51,8 @@ section>p:last-child {
 
 .home-button-wrapper {
     position: absolute;
-    bottom: 5px;
-    left: 5px;
+    bottom: 1%;
+    left: 1%;
 }
 
 .home-button {
@@ -65,7 +65,7 @@ section>p:last-child {
 
 .home-button>a {
     text-decoration: none;
-    color: inherit;
+    color: black;
 }
 
 .home-button>a:hover {
