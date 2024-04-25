@@ -69,7 +69,7 @@ section>p:last-child {
 }
 
 .home-button>a:hover {
-    color: darkgreen;
+    color: darkred;
 }
 
 @media (max-aspect-ratio: 2/3) {
