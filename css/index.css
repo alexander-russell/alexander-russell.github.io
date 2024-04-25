@@ -10,6 +10,7 @@ body {
 
 .page {
     display: flex;
+    flex-direction: row;
     align-items: center;
     max-width: 800px;
     /* border: 1px solid green; */
@@ -70,7 +71,6 @@ header>h1 {
 
 .column-2 {
     display: flex;
-    /* width: 100%; */
     /* border: 1px solid brown; */
 }
 
@@ -79,13 +79,36 @@ header>h1 {
 }
 
 @media (max-aspect-ratio: 2/3) {
+    body {
+        padding: 10% 0%;
+    }
     .page {
         flex-direction: column;
-        margin-bottom: 10%;
+        max-width: 90%;
+    }
+
+    nav>ul {
+        overflow: scroll;
+    }
+
+    nav>ul>li {
+        font-size: 1em;
+    }
+
+    header>h1 {
+        font-size: 4em;
     }
 
     .column-1,
     .column-2 {
-        width: 80%;
+        width: 100%;
+    }
+
+    .column-1 {
+        padding: 0px;
+    }
+
+    .about {
+        font-size: 1.2em;
     }
 }
