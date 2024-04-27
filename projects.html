@@ -1,15 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/projects.css">
+    <script src="scripts/projects.js" defer></script>
     <title>Projects</title>
 </head>
+
 <body>
-    <ul>
-        <li>
-            <a href="/cocktail">Closest Cocktail</a>
-        </li>
-    </ul>
+    <div class="page">
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <!-- <li>
+                    <a href="/recipes">Recipes</a>
+                </li> -->
+                <li>
+                    <a href="/projects">Projects</a>
+                </li>
+                <li>
+                    <a href="/contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Projects</h1>
+        </header>
+        <section class="overview">
+            Here's a snapshot of some of the things I've been working on. Hope you enjoy them as much as I do.
+        </section>
+        <div class="projects">
+            <section class="project" id="cocktail">
+                <div class="header-row">
+                    <h2><a href="/cocktail">Closest Cocktail</a></h2>
+                    <div class="tags-wrapper">
+                        <ul class="tags">
+                            <li class="tag-item">R</li>
+                            <li class="tag-item">Shiny</li>
+                            <li class="tag-item">UMAP</li>
+                            <li class="tag-item">#TidyTuesday</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="summary">
+                    Recommends you a cocktail! You select your favourite cocktail, what ingredients you have on hand and
+                    how many new ones you'd be willing to buy. The application then gives you a handful of
+                    recommendations based on that information, and lists out the ingredients for each one.
+                </p>
+                <p class="more">
+                    The data comes from #TidyTuesday, and my analysis is heavily inspired by Julia Silge's demonstration
+                    of tidymodels using this dataset. I modelled the data with UMAP, and used that to determine
+                    similarity of cocktails. For a selected cocktail, the application calculates the euclidean distance
+                    between that and all other cocktails in the dataset, using the 2D UMAP space.
+                </p>
+                <p class="more">
+                    With the list of ingredients available, I also set it up to filter out any that need heaps of new
+                    ingredients, letting the user determine what constitutes heaps.
+                </p>
+                <p class="more">
+                    This project was my first ever use of Shiny, definitely a steep learning curve.
+                </p>
+            </section>
+            <section class="project" id="recipes">
+                <div class="header-row">
+                    <h2><a href="/recipes">Recipe Book</a></h2>
+                    <div class="tags-wrapper">
+                        <ul class="tags">
+                            <li class="tag-item">html</li>
+                            <li class="tag-item">css</li>
+                            <li class="tag-item">js</li>
+                            <li class="tag-item">json</li>
+                            <li class="tag-item">PowerShell</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="summary">
+                    I've been keeping track of my recipes in a JSON file for a while, and I recently put together a web
+                    layout for the data. I've added a couple of features that I think are pretty cool: cost per serve
+                    calculation, scalable ingredients and preset timers. The whole thing is hand-coded by me.
+                </p>
+                <p class="more">
+                    To create a recipe entry, I've written a PowerShell script that prompts for each field and assembles
+                    them into a custom [recipe] class before serialising to JSON. One of the class methods calculates
+                    the cost per serve of the recipe. To write this I had to write an algorithm to convert between the
+                    different units I used in my recipes, and I had to run through Aldi with a spreadsheet.
+                </p>
+                <p class="more">
+                    The PowerShell interface also lets me add timers to the recipe, by giving each a name and a duration
+                    in seconds. When I render the website, the JavaScript creates an element for each timer. A single
+                    click starts/stops the timer, a double click resets it. My favourite part is that thanks to modern
+                    web technology etc, it was trivial to incorporate text-to-speech - instead of ringing, the timer
+                    repeats its name over and over again until you reset the timer.
+                </p>
+            </section>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,139 @@
+a:hover {
+    color: darkred;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    /* border: 1px solid green; */
+}
+
+nav {
+    display: flex;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* border: 1px solid red; */
+
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+    /* border: 1px solid chartreuse; */
+}
+
+nav>ul>li {
+    display: flex;
+    flex: 1; 
+    justify-content: center;
+    padding: auto;
+    /* border: 1px solid greenyellow; */
+    border-left: 1px solid black;
+    font-size: 1.5em;
+}
+
+nav>ul>li:last-child {
+    border-right: 1px solid black;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: black;
+}
+
+header>h1 {
+    margin-top: 0px;
+    margin-bottom: 5%;
+    width: 100%;
+    font-size: 5em;
+    text-transform: lowercase;
+    text-align-last: justify;
+    text-justify: inter-character;
+}
+
+/* Stuff for individual projects */
+
+.project {
+    margin-top: 5%;
+    padding-top: 1%;
+    border-top: 2px solid black;
+}
+
+.header-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.header-row>h2 {
+    margin: 0px;
+    /* border: 1px solid orange; */
+}
+
+.header-row>h2>a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-row>h2>a:hover {
+    color: darkred;
+}
+
+.tags-wrapper {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid blue */
+}
+
+.tags {
+    display: flex;
+    margin: 0px;
+    padding-left: 0px;
+    /* border: 1px solid magenta; */
+}
+
+.tag-item {
+    display: flex;
+    padding: 2px;
+    /* border: 1px solid greenyellow; */
+    border-right: 1px solid black;
+}
+
+.tag-item:last-child {
+    border-right: none;
+}
+
+.project .more {
+    display: none;
+}
+
+.show-more-button,
+.show-less-button {
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    color: black;
+}
+
+.show-more-button:hover,
+.show-less-button:hover {
+    color: darkred;
+    cursor: pointer;
+}
