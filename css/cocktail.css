@@ -1,0 +1,35 @@
+* {
+    font-family: Baskerville, 'Times New Roman', Times, serif;
+}
+
+iframe {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.home-button-wrapper {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
+
+.home-button {
+    background: white;
+    border: none;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.home-button>a {
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+}
+
+.home-button>a:hover {
+    color: darkred;
+}
