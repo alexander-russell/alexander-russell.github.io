@@ -60,6 +60,7 @@ header>h1 {
     width: 100%;
     font-size: 5em;
     text-transform: lowercase;
+    text-align: justify;
     text-align-last: justify;
     text-justify: inter-character;
 }

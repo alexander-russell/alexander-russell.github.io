@@ -1,5 +1,6 @@
 a:hover {
     color: darkred;
+    cursor: pointer;
 }
 
 body {
