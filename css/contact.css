@@ -49,6 +49,24 @@ section>p:last-child {
     margin-bottom: 0px;
 }
 
+/* Icons */
+.icons-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid pink; */
+}
+
+.icons-list>li {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid lime; */
+}
+
+.icons-list>li>svg {
+    padding: 1px;
+}
+
 .home-button-wrapper {
     position: absolute;
     bottom: 1%;
