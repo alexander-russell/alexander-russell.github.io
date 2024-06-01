@@ -69,8 +69,8 @@ section>p:last-child {
 
 .home-button-wrapper {
     position: absolute;
-    bottom: 1%;
-    left: 1%;
+    bottom: 10px;
+    left: 0px;
 }
 
 .home-button {
@@ -82,6 +82,11 @@ section>p:last-child {
 }
 
 .home-button>a {
+    padding: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-top: 20px;
     text-decoration: none;
     color: black;
 }
