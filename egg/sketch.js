@@ -66,7 +66,9 @@ function keyPressed() {
     currentEgg = max(0, currentEgg - 1);
   }
   if (keyCode == RIGHT_ARROW) {
-    currentEgg = min(eggs.length - 1, currentEgg + 1);
+    if (eggs[currentEgg][0] != 0) {
+      currentEgg = min(eggs.length - 1, currentEgg + 1);
+    }
   }
 }
 
