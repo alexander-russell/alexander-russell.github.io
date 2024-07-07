@@ -1407,5 +1407,5 @@ function mouseWheel(scroll) {
   textStartY -= scroll.deltaY / 3;
   // console.log(scroll.deltaY);
   //Bounds checking
-  textStartY = max(min(textStartY, 150), 0)
+  textStartY = max(min(textStartY, 225), 0)
 }
